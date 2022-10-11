@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nav-bar using html and css</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+           
+        }
+        body{
+            width: 100%;
+            min-height:100vh;
+            background-image: linear-gradient(to bottom right, rgb(74, 214, 245), rgb(203, 243, 248));
+            /* background-size: cover; */
+            /* background-color: #2d3436; */
+        }
+        /* .body{
+            
+        } */
+        nav{
+            height:100px;
+            background-color:#00cec9;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 5px 2px 6px 1px;
+        }
+        .logo{
+            width: 40%;
+            color:#e17055;
+            padding-left: 70px;
+        }
+        .logo h2{
+            text-shadow: 2px 2px 2px #dfe6e9;
+        }
+        .menu{
+            width:60%;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            
+        }
+        .menu a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #2d3436;
+            font-weight: bolder;
+            position: relative;
+        }
+        .menu a:before{
+            position:absolute;
+            content: " ";
+            width: 0;
+            height: 2px;
+            top:100%    ;
+            left:0;
+            background-color: #2d3436;
+            transition: all 0.5s linear;
+        }
+        .menu a:hover:before{
+            width: 100%;
+            background-color: #0984e3;
+        }
+        .form{
+            background-color: dimgrey;
+            width:200px;
+            /* margin:150px; */
+            padding:50px;
+            margin-top: 100px;
+            margin-left: 550px;
+            opacity: 0.8;
+            box-shadow: 2px 2px 2px 2px rgb(22, 22, 22);
+            border-radius: 10px;
+            
+            }
+        
+    </style>
+</head>
+<body>
+    <div class="body">
+    <nav>
+        <div class="logo">
+           <h2>Gita Institude</h2>
+        </div>
+        <div class="menu">
+                <a href="https://sdlctraining.in/" target="_blank">Home</a>
+                <a href="#">Course</a>
+                <a href="#">fees</a>
+                <a href="#">Contact</a>
+        </div>
+    </nav>
+    <div class="form">
+        <from name="Login From" action="processor.html" method="post">
+            <label>Email ID:</label>
+            <input type="Email" name="txtEmail ID" value=""/>
+            <br><br>
+            <label>Password:</label>
+            <input type="password" name="txtPWD" value=""/>
+            <br><br>
+            <input type="radio" name="RadioBTN" value="M">
+            <label>Male</label>
+            <input type="radio" name="RadioBTN" value="N">
+            <label>Female</label>
+            <br><br>
+            <input type="Submit" name="SUBMIT">
+            <input type="Reset" name="RESET">
+        </from>
+    </div>
+</div>
+</body>
+
+</html>

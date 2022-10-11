@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>femous place with drop-fown & hover </title>
+    <style>
+        body{
+            background: url("image1.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+        }
+        .menudropdown{
+            width: 85%;
+            height: 100px;
+            margin: 0px auto;
+            /* box-shadow: 2px 2px 2px 2px black; */
+        }
+        .menudropdown ul{
+            padding: 0px;
+
+        }
+        .menudropdown ul li{
+            float: left;
+            background-color: black;
+            color:aliceblue;
+            width:165px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 15px;
+            text-align: center;
+            list-style: none;
+            opacity: 0.6;
+            box-shadow: 2px 2px 2px 2px black;  
+        }
+        .menudropdown ul li ul{
+            display: none;
+        }
+        .menudropdown ul li:hover > ul{
+            display: block;
+        }
+        .menudropdown ul li:hover{
+            background-color:rgb(128, 168, 243);
+            opacity: 0.9;
+        }
+        .menudropdown ul li ul li{
+            position: relative;
+        }
+        .menudropdown ul li ul li ul{
+            position: absolute;
+            left:165px;
+            top:0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menudropdown">
+    <ul>
+        <li>INDIA
+        <ul>
+            <li>MUMBAI</li>
+            <li>PUNE</li>
+            <li>ODISHA
+                <ul>
+                    <li>Konark</li>
+                    <li>LingaRaj Temple</li>
+                    <li>Puri</li>
+                    <li>Gopalpur</li>
+                </ul>
+            </li>
+            <li>BANGLORE</li>
+            <li>CHENNAI</li>
+            <li>DELHI</li>
+        </ul>
+        </li>
+            <li>USA
+                <ul>
+                    <li>NEWYORK</li>
+                </ul>
+            </li>
+        <li>FRANCE</li>
+        <li>RUSSIA</li>
+        <li>ENGLAND</li>
+        <li>URABIAN COUNTRY</li>
+    </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Slider</title>
+    <style>
+        body{
+            background-color: rgba(27, 21, 34, 0.80);
+        }
+        .waviy {
+            position: relative;
+            -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+            font-size: 60px;
+            text-align: center;
+        }
+        .waviy span {
+            font-family: 'Alfa Slab One', cursive;
+            position: relative;
+            display: inline-block;
+            color: #fff;
+            text-transform: uppercase;
+            animation: waviy 1s infinite;
+            animation-delay: calc(.1s * var(--i));
+  
+        }
+        .imgslider{
+            width: 70%;
+            height:400px;
+            position: absolute;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            background-image: url("image.jpg");
+            background-size: 100%,100%;
+            box-shadow: 1px 2px 10px 5px whitesmoke;
+            animation:slider 9s infinite linear ;
+        }
+        @keyframes slider{
+            0%{background-image: url("image.jpg"); }
+            35%{background-image: url("image1.jpg"); }
+            75%{background-image: url("education.jpg"); }
+        }
+        @keyframes waviy {
+            0%,40%,100% {transform: translateY(0)}
+            20% {transform: translateY(-20px)}
+        }
+        .video{
+            width: 100px;
+            height: auto;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="waviy">
+        <span style="--i:1">C</span>
+        <span style="--i:2">S</span>
+        <span style="--i:3">S</span>
+        <span style="--i:4"> </span>
+        <span style="--i:5">A</span>
+        <span style="--i:6">N</span>
+        <span style="--i:7">I</span>
+        <span style="--i:8">M</span>
+        <span style="--i:9">A</span>
+        <span style="--i:10">T</span>
+        <span style="--i:11">I</span>
+        <span style="--i:12">O</span>
+        <span style="--i:13">N</span>
+     
+       <!-- </div>
+    <div class="imgslider"> -->
+
+    </div>
+    <div class="video">
+    <video width="600" controls>
+        <source src="./Video.mp4" type="video/mp4">
+    </video>
+</div>
+</body>
+</html>

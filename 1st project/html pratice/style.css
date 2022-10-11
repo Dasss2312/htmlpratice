@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0
+    ;
+}
+.backimg{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 100vh;
+    background-image: url('335850.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%,100%;
+    background-attachment: fixed;
+}
+.backimg1{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 100vh;
+    background-image: url('education.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%,100%;
+    background-attachment: fixed;
+}
